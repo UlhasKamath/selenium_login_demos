@@ -1,9 +1,10 @@
 from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.by import By
+from getpass import getpass
 
 user_name = input("Enter Email ID: ")
-pass_word = input("Enter the password: ")
+pass_word = getpass("Enter the password: ")
 
 driver = webdriver.Chrome()
 driver.get('https://www.facebook.com/')
